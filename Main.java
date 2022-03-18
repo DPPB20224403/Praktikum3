@@ -108,7 +108,6 @@ class Main {
     System.out.println("Masukan kg beli daging anda");
     int pilihanKg = input.nextInt();
     trx.setKgBeli(pilihanKg);
-    trx.setTotalBayar(trx.getDaging().getHargaDaging(), trx.getKgBeli());
     System.out.println(trx.getTotalBayar());
 
   }

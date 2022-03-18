@@ -19,11 +19,11 @@ public class Transaksi{
     return this.kgBeli;
   }
 
-  public void setTotalBayar(double harga, int kg){
-    this.totalBayar = daging.getHargaDaging() * this.kgBeli;
+  public void setTotalBayar(double totalBayar){
+    this.totalBayar = totalBayar;
   }
 
   public double getTotalBayar(){
-    return this.totalBayar;
+    return this.daging.getHargaDaging() * this.kgBeli;
   }
 }
